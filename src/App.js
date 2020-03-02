@@ -7,6 +7,11 @@ import test from "test";
 const styles = css`
   font-size: 12px;
 `;
+const overrideStyles = css`
+  && {
+    font-size: 12px;
+  }
+`;
 
 const Title = styled.h1`
   font-family: sans-serif;
@@ -14,6 +19,13 @@ const Title = styled.h1`
   color: ${test.color};
 `;
 
-const App = () => <Title className={styles}>Hello world!</Title>;
+const App = () => {
+  return (
+    <>
+      <Title className={styles}>My size is never applied</Title>
+      <Title className={overrideStyles}>Mine is tho</Title>
+    </>
+  );
+};
 
 ReactDOM.render(<App />, document.getElementById("root"));
