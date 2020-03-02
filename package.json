@@ -1,0 +1,27 @@
+{
+  "name": "linaria-demo",
+  "version": "1.0.0",
+  "description": "Demo project for linaria.now.sh",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "dependencies": {
+    "linaria": "^1.4.0-beta.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.22.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
